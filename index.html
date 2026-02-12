@@ -146,6 +146,32 @@
       display: block;
     }
 
+    .qr-panel {
+      display: none;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.94);
+    }
+
+    .qr-panel img {
+      width: 96px;
+      height: 96px;
+      border-radius: 10px;
+      display: block;
+      border: 1px solid rgba(19, 50, 71, 0.12);
+      background: #ffffff;
+    }
+
+    .qr-panel p {
+      margin: 0;
+      max-width: 180px;
+      font-size: 0.87rem;
+      color: var(--ink-soft);
+    }
+
     .contact-link {
       text-decoration: none;
       color: #ffffff;
@@ -254,6 +280,12 @@
       }
     }
 
+    @media (min-width: 901px) {
+      .qr-panel {
+        display: flex;
+      }
+    }
+
     @media (max-width: 900px) {
       body {
         padding: 14px;
@@ -297,8 +329,12 @@
         <p>PediaBP is a clinical reference tool designed to help evaluate blood pressure in children and neonates using age-appropriate norms and percentiles.</p>
         <p>Blood pressure interpretation in pediatrics is complex and depends on multiple factors such as age, sex, and height. PediaBP simplifies this process by providing fast, accurate percentile-based results in a clean and intuitive interface.</p>
         <div class="cta-row">
-          <div class="download-badge" aria-label="Download PediaBP">
+          <a class="download-badge" href="https://apps.apple.com/app/6758457981" target="_blank" rel="noopener noreferrer" aria-label="Download PediaBP">
             <img src="Download.png" alt="Download PediaBP">
+          </a>
+          <div class="qr-panel" aria-label="Desktop QR code for PediaBP download">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fapps.apple.com%2Fapp%2F6758457981" alt="QR code linking to PediaBP on the App Store">
+            <p>On desktop? Scan with your iPhone camera to download PediaBP.</p>
           </div>
         </div>
       </div>
