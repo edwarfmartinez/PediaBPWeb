@@ -61,6 +61,14 @@
       margin-bottom: 18px;
     }
 
+    .top-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
     .brand {
       display: flex;
       align-items: center;
@@ -262,6 +270,11 @@
       .grid {
         grid-template-columns: 1fr;
       }
+
+      .top-meta {
+        width: 100%;
+        justify-content: flex-start;
+      }
     }
   </style>
 </head>
@@ -272,7 +285,10 @@
         <img src="PediaBPLogo.png" alt="PediaBP icon">
         <h1>PediaBP</h1>
       </div>
-      <span class="pill">Clinical reference for pediatric blood pressure interpretation</span>
+      <div class="top-meta">
+        <span class="pill">Clinical reference for pediatric blood pressure interpretation</span>
+        <a class="contact-link" href="mailto:edwarmartinez@yahoo.com?subject=PediaBP%20Contact">Contact us</a>
+      </div>
     </header>
 
     <section class="hero">
@@ -284,7 +300,6 @@
           <div class="download-badge" aria-label="Download PediaBP">
             <img src="Download.png" alt="Download PediaBP">
           </div>
-          <a class="contact-link" href="mailto:edwarmartinez@yahoo.com?subject=PediaBP%20Contact">Contact us</a>
         </div>
       </div>
       <div class="logo-panel">
